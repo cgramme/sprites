@@ -3,8 +3,7 @@ body{
 
 }
 .center{
-	position: fixed;
-	background-color: #000;
+	background: url('images/blue_sky.jpg');
 	text-align: center;
 	bottom: 0;
 	top: 0;
@@ -14,20 +13,54 @@ body{
 
 
 #gun{
-	margin: 100px auto;
-	background: url('images/hearts.png');	
-	width: 200px;
-	height: 200px;
-	-webkit-animation: shoot-gun 1.5s steps(18) infinite;
-	animation: shoot-gun 1.5s steps(18) infinite;
+	margin-top: 100px;
+	float: left;
+	display: inline-block;
+	background: url('images/craft.png');	
+	width: 300px;
+	height: 300px;
+	-webkit-animation: shoot-gun 2s steps(13) infinite;
+	animation: shoot-gun 2s steps(13) infinite;
+}
+ 
+#rocket{
+	margin-top: 100px;
+	float: left;
+	display: inline-block;
+	background: url('images/rocket.png');	
+	width: 150px;
+	height: 300px;
+	-webkit-animation: rocket 1s steps(8) infinite;
+	animation: rocket 1s steps(8) infinite;
+} 
+
+@-webkit-keyframes rocket {
+	from{ background-position: 0 0}
+	to{ background-position: -1200px 0}
+}
+
+@keyframes rocket {
+	from{ background-position: 0 0}
+	to{ background-position: -1200px 0}
+}
+
+.ground{
+	background: url('images/moon.jpg') no-repeat center fixed;
+	background-size: 100% 100%;
+	width: 100%;
+	border: 2px solid #222;
+	height: 400px;
 }
 
 @-webkit-keyframes shoot-gun {
 	from{ background-position: 0 0}
-	to{ background-position: -3600px 0}
+	to{ background-position: -3900px 0}
 }
 
 @keyframes shoot-gun {
 	from{ background-position: 0 0}
-	to{ background-position: -3600px 0}
+	to{ background-position: -3900px 0}
+}
+.clear{
+	clear: both;
 }
