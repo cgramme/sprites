@@ -1,6 +1,6 @@
 
 body{
-
+	width: 1000px;
 }
 .center{
 	background: url('images/blue_sky.jpg');
@@ -44,11 +44,53 @@ body{
 	to{ background-position: -1200px 0}
 }
 
+#heart{
+	margin-top: 100px;
+	float: left;
+	display: inline-block;
+	background: url('images/hearts.png');	
+	width: 200px;
+	height: 200px;
+	-webkit-animation: heart 2s steps(18) infinite;
+	animation: heart 2s steps(18) infinite;
+} 
+
+@-webkit-keyframes heart {
+	from{ background-position: 0 0}
+	to{ background-position: -3600px 0}
+}
+
+@keyframes heart {
+	from{ background-position: 0 0}
+	to{ background-position: -3600px 0}
+}
+
+#pistol{
+	margin-top: 100px;
+	float: left;
+	display: inline-block;
+	background: url('images/gunSheet.png');	
+	width: 210px;
+	height: 110px;
+	-webkit-animation: gun 1s steps(6) infinite;
+	animation: gun 1s steps(6) infinite;
+} 
+
+@-webkit-keyframes gun {
+	from{ background-position: 0 0}
+	to{ background-position: -1260px 0}
+}
+
+@keyframes gun {
+	from{ background-position: 0 0}
+	to{ background-position: -1260px 0}
+}
+
 .ground{
-	background: url('images/moon.jpg') no-repeat center fixed;
+	background: url('images/moon.jpg') no-repeat center;
 	background-size: 100% 100%;
 	width: 100%;
-	border: 2px solid #222;
+	border-top: 3px solid #666;
 	height: 400px;
 }
 
