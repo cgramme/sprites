@@ -1,0 +1,33 @@
+
+body{
+
+}
+.center{
+	position: fixed;
+	background-color: #000;
+	text-align: center;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+
+#gun{
+	margin: 100px auto;
+	background: url('images/hearts.png');	
+	width: 200px;
+	height: 200px;
+	-webkit-animation: shoot-gun 1.5s steps(18) infinite;
+	animation: shoot-gun 1.5s steps(18) infinite;
+}
+
+@-webkit-keyframes shoot-gun {
+	from{ background-position: 0 0}
+	to{ background-position: -3600px 0}
+}
+
+@keyframes shoot-gun {
+	from{ background-position: 0 0}
+	to{ background-position: -3600px 0}
+}
